@@ -1,8 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
     <PropertyGroup>
-        <TargetFrameworks>net7.0-maccatalyst;</TargetFrameworks>
-        <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
+        <TargetFrameworks>net7.0-windows10.0.19041.0;</TargetFrameworks>
+<!--        <TargetFrameworks>net7.0-maccatalyst;</TargetFrameworks>-->
+<!--        <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>-->
         <OutputType>Exe</OutputType>
         <RootNamespace>ToolsFx</RootNamespace>
         <UseMaui>true</UseMaui>
@@ -14,7 +15,7 @@
         <ApplicationTitle>ToolsFx</ApplicationTitle>
 
         <!-- App Identifier -->
-        <ApplicationId>com.companyname.toolsfx</ApplicationId>
+        <ApplicationId>com.zestware.toolsfx</ApplicationId>
         <ApplicationIdGuid>4F085270-5468-47C6-96D8-90FFAB087B7B</ApplicationIdGuid>
 
         <!-- Versions -->
